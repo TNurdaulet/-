@@ -1,0 +1,8 @@
+from virazheniemodule import formula
+import math
+
+gradus = float(input("Введите угол в градусах: "))
+radian = math.radians(gradus)
+result = formula(radian)
+print(f"Результат выражения sqrt(1 - sin^2(x)) при x = {gradus}°: {result:}")
+
