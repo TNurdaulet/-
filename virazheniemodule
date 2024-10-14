@@ -1,0 +1,8 @@
+import math
+
+def formula(x):
+    
+    sin_x = math.sin(x)
+    result = math.sqrt(1 - sin_x**2)
+    
+    return result
