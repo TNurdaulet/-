@@ -1,0 +1,9 @@
+import TNmodule
+
+resultp = TNmodule.plus(2, 3)
+print (resultp)
+
+resultm = TNmodule.minus(8, 8)
+print (resultm)
+
+TNmodule.privet("Нурдаулет")
