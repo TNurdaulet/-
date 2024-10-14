@@ -1,0 +1,11 @@
+from virazh2module import zet
+from virazh2module import qqq
+
+x = float(input("Введите значение x: "))
+y = float(input("Введите значение y: "))
+    
+z = zet(x, y)
+q = qqq(x, y)
+
+print(f"Значение z: {z}")
+print(f"Значение q: {q}")
