@@ -1,0 +1,66 @@
+# Абрамян стр 15 задача 19 на if
+
+ch1 = int(input("Введите первое число: "))
+ch2 = int(input("Введите второе число: "))
+ch3 = int(input("Введите третье число: "))
+ch4 = int(input("Введите четвертое число: "))
+
+if ch1 == ch2 == ch3:
+    print("Отличается четвертое число, его порядковый номер: 4")
+    
+elif ch1 == ch2 == ch4:
+    print("Отличается третье число, его порядковый номер: 3")
+    
+elif ch1 == ch3 == ch4:
+    print("Отличается второе число, его порядковый номер: 2")
+    
+else:
+    print("Отличается первое число, его порядковый номер: 1")
+
+
+# Абрамян стр 26 задача 19 на while
+
+N = int(input("Введите число N (больше 0): "))
+
+spravaNalevo = 0
+
+while N > 0:
+    delenie = N % 10  
+    spravaNalevo = spravaNalevo * 10 + delenie
+    N = N // 10  
+
+print("Число, прочитанное справа налево:", spravaNalevo)
+
+# упражнение 8.1
+
+s = "У лукоморья 123 дуб зеленый 456"
+
+index_ya = s.find('я')
+if index_ya != -1:
+    print(f"Буква 'я' найдена на позиции: {index_ya}")
+else:
+    print("Буква 'я' не найдена в строке")
+    
+count_y = s.count('у')
+print(f"Буква 'у' встречается {count_y} раз")
+
+if not s.isalpha():
+    print(s.upper())
+else:
+    print("Строка состоит только из букв")
+
+if len(s) > 4:
+    print(s.lower())
+
+s_modified = 'О' + s[1:]
+print(s_modified)
+
+# упражнение 8.2
+
+from stroka_module import stroka
+
+s = input("Введите строку: ")
+n = int(input("Введите число n: "))
+
+result = stroka(s, n)
+print(f"Результат: {result}")
