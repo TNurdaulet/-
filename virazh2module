@@ -1,0 +1,14 @@
+import math
+
+def zet(x, y):
+    sverhu = x + (2 + y) / (x ** 2)
+    snizu = 1 + y / math.sqrt(x ** 2 + 10)
+    z = sverhu / snizu
+    
+    return z
+
+def qqq(x, y):
+   
+    q = 2.8 * math.sin(x) + abs(y)
+    
+    return q
